@@ -27,6 +27,6 @@ jobs:
         with:
           node-version: '24'
       - name: test
-        run: npm install
+        run: npm test
 
 
