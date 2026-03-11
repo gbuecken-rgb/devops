@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [[18, 20, 'lts/*']
+        node-version: [18, 20, 'lts/*']
         os: [ubuntu-latest, ubuntu-22.04]
         exclude:
           - node-version: 18
