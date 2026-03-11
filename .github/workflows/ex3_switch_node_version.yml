@@ -17,4 +17,4 @@ jobs:
           shell: bash
           run: |
             npm install
-            npm list
+            npm help
