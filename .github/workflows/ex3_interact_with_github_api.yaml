@@ -4,6 +4,8 @@ on:
 
 jobs:
   create-issue:
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     steps: 
       - id: short_sha
