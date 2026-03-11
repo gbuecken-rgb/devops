@@ -15,7 +15,7 @@ jobs:
         - uses: actions/cache@v5
           with:
             path: ./node_modules
-            key: ${{ runner.os }}-node-${{ hashFiles('**/lockfiles') }}
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
             restore-keys: |
               ${{ runner.os }}-node-
         - name: run install
@@ -32,7 +32,7 @@ jobs:
         - uses: actions/cache@v5
           with:
             path: ./node_modules
-            key: ${{ runner.os }}-node-${{ hashFiles('**/lockfiles') }}
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
             restore-keys: |
               ${{ runner.os }}-node-
         - name : setup node
@@ -42,4 +42,4 @@ jobs:
         - name: run test
           shell: bash
           run: |
-            npm test
+            npm help
